@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#page-wrapper{
+    background-color: #CFE2FC;
+    width: 80vw;
+    /* Squeezing the page to right so that only 80% of page is consumed */
+    margin: 0 auto;
+    /* first value (0) applies to top&bottom and second value (auto) applies to L&R */
+}
+
+header{
+    background-color: #6EA9F7;
+    color: white;
+    padding: 3%;
+    font-size: calc(2px + 1.5vw);
+    text-align: left;
+}
+
+header p{
+    padding: 1% 0 0;
+}
+
+#nav-main{
+    width: 100%;
+    /* % is applied to parent
+        100% of the 80vw width from page-wrapper*/
+    display: flex;
+    flex-direction: row;
+    /* row makes it side by side */
+}
+
+main{
+    height: 130vh;
+    /* I made height calculated with my 16inch macbook*/
+    /* vh, vw is relative to the hardward/display */
+    width: 70%;
+    /* 70% of the 100% from nav-main */
+    text-align: center;
+    font-size: calc(2px + 1.3vw);
+}
+
+#exp-main{
+    /* The content exceeded the page */
+    height: 200vh;
+}
+
+#proj-main{
+    /* The content exceeded the page */
+    height: 280vh;
+    font-size: calc(2px + 1.3vw);
+}
+
+#leader-main{
+    /* The content exceeded the page */
+    height: 150vh;
+}
+
+main *{
+    margin: 2% 0;
+}
+
+nav{
+    background-color: #9FC6F9;
+    width: 30%;
+    /* 30% of the 100% from nav-main  */
+}
+
+nav ul {
+    /* Increase specificity to only target ul in the nav tag */
+    padding-left: 0;
+    /* remove left margin */
+    list-style: none;
+    /* remove bullet */
+}
+
+nav li{
+    border: 1px solid #CFE2FC;
+    background-color: #CFE2FC;
+    width: 80%;
+    margin: 15% auto;
+    padding: 4% 0;
+    text-align: center;
+}
+
+nav a{
+    color: #3E8DF4;
+    font-size: calc(2px + 1.5vw);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+#home-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home-img img{
+    margin:auto;
+    width: 40%;
+}
+
+#home-intro{
+    width: 45%;
+    margin: 3% auto;
+    line-height: 150%;
+    text-align: center;
+}
+
+main ul{
+    padding-left: 0;
+    /* remove left margin */
+    list-style: none;
+}
+
+main li{
+    border-left: 3px solid #2980F2;
+    background-color: #CFE2FC;
+    width: 90%;
+    margin: 5% auto;
+    padding: 2% 5%;
+    text-align: left;
+}
+
+#edu-ul li{
+    line-height: 250%;
+}
+
+#certs-ul p{
+    line-height: 200%;
+}
+
+main p {
+    margin: 5% auto;
+    line-height: 200%;
+}
+
+#proj-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 1% auto;
+    font-size: calc(2px + 1.5vw);
+    color: #2980F2;
+    font-weight: bold;
+}
+
+#proj-input input {
+    width: 35%;
+    padding: 10% 3%;
+    font-size: calc(2px + 2.5vw);
+    font-weight: bold;
+    border: 3px solid #9FC6F9;
+    color: #2980F2;
+    text-align: center;
+}
+
+#proj-button button {
+    width: 10%;
+    padding: 3% 0;
+    border: 1px solid white;
+    background-color: #3E8DF4;
+    color: white;
+    font-size: calc(2px + 1.5vw);
+    font-weight: bold;
+}
+
+#output {
+    width: 60%;
+    padding: 3% 0;
+    border: 2px solid #9FC6F9;
+    font-size: calc(2px + 1.5vw);
+    font-weight: bold;
+    margin: 1% auto;
+    align-items: center;
+    background-color: white;
+}
+
+
+footer{
+    background-color: #6EA9F7;
+    color: white;
+    padding: 1%;
+    font-size: calc(2px + 1.5vw);
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    /* I made height calculations with my 16inch macbook. */
+
+    main{
+        height:100vh;
+    }
+
+    #exp-main{
+        height: 120vh;
+    }
+
+    #proj-main{
+        height: 200vh;
+    }
+
+    #leader-main{
+        height: 100vh;
+    }
+
+    #nav-main{
+        flex-direction: column;
+    }
+
+    nav, main{
+        width: 100%
+    }
+
+    header{
+        text-align: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav li{
+        margin: 1% 1%;
+        padding: 1% 0;
+    }
+
+    #home-img{
+        flex-direction: column;
+    }
+
+    #home-img img{
+        margin:auto;
+        width: 60%;
+    }
+
+    #home-intro{
+        width: 80%;
+    }
+
+    #edu-ul li{
+        /* The vertical white space was too long, so I increased
+         the height between the line to reduce the waste space */
+        line-height: 400%;
+    }
+
+    #proj-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #proj-input input {
+        width: 20%;
+        padding: 5% 2%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    /* I made height calculations with my 16inch macbook.
+    I set vh based on 1000px, but the leftover blank space of the page
+    becomes so large as I decrease the screen to mobile view. Therefore I
+    added a new media screen for a max-width of 750px. This is still too
+    large for home, education, etc, but the height is already 100vh, so
+    I couldn't make it smaller. */
+
+    #exp-main {
+        height: 100vh;
+    }
+
+    #proj-main{
+        height: 140vh;
+    }
+
+    /* The vertical white space was too long, so I increased
+         the height between the line to reduce the waste space */
+
+    #edu-ul li{
+        line-height: 550%;
+    }
+
+    #certs-ul p{
+        line-height: 300%;
+    }
+
+    #leader-ul p {
+        line-height: 300%;
+    }
+
+    #home-intro{
+        line-height: 300%;
+    }
+
+}

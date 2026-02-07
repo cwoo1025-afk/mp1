@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects | Resume</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <header>
+                <h1>Chanmin's Resume</h1>
+                <p> Chanmin's career objectives and background</p>
+            </header>
+            <div id="nav-main">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html"> Home </a></li>
+                        <li> <a href="edu.html"> Education </a></li>
+                        <li> <a href="exp.html"> Experiences </a></li>
+                        <li> <a href="proj.html"> Projects </a></li>
+                        <li> <a href="leader.html"> Leaderships </a></li>
+                        <li> <a href="certs.html"> Certificates </a></li>
+
+                    </ul>
+                </nav>
+                <main id="proj-main">
+                    <h3>Projects </h3>
+                    <ul>
+                        <li>
+                            <strong>BI513 Genetics Lab </strong> | <em>Biology Researcher</em> <br>
+                            <p>
+                                Boston, MA | Sep 2025 - Dec 2025 <br>
+                                - Executed Cas9–gRNA–mediated gene editing and EMS mutagenesis in S. cerevisiae, integrating plasmid purification,
+                                chromosomal editing induction on galactose, selective phenotype screening (CAN1, ADE2), and downstream
+                                PCR–QIAquick purification workflows for allele sequencing and mutation frequency analysis.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Gallium Nitride Biocompatibility </strong> | <em>Cell Biology Researcher</em> <br>
+                            <p>
+                                Boston, MA | Sep 2024 - May 2024 <br>
+                                - Transformed GaOx to GaN by adopting the nitrogen substitution to examine the biocompatibility of GaN by cell growth. <br>
+                                - Developed 1 - 6 layers of GaN films and examined the thickness-dependent HEK293 cell adhesion and proliferation.<br>
+                                - Replicated cell culture experiments on the surface of GaN, testing biocompatibility for use in medical device applications.<br>
+                                - Sponsored by Professor Ling from the Chemistry Department at BU, Professor Tolan from the Biology Department at BU,
+                                and Professor Dickey from the Chemical and Biomolecular Engineering Department at NC State University.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Gallium Nitride Synthesis </strong> | <em>Material Science Researcher</em> <br>
+                            <p>
+                                Boston, MA | Nov 2023 - May 2025 <br>
+                                - Converted transition metal dichalcogenides (TMDs) into high-crystalline 2D ultrathin GaN, investigating the optimal
+                                experimental parameters and characterization of the film through rounds of Raman & Photoluminscence spectroscopy. <br>
+                                - Developed and modeled 2D ultrathin GaN, a wide-bandgap semiconductor with high electron mobility and excellent
+                                thermal conductivity that enhances functionality in applications such as power electronics. <br>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div id="proj-input">
+                        <Label for="first">First number:</Label><input id="first">
+                        <Label for="second">Second number:</label><input id="second">
+                    </div>
+
+                    <div id="proj-button">
+                        <button onclick="doAdd()">+</button>
+                        <button onclick="doSub()">-</button>
+                        <button onclick="doMult()">*</button>
+                        <button onclick="doDiv()">/</button>
+                        <button onclick="doPow()">**</button>
+                        <button onclick="doClear()">Clear</button>
+                    </div>
+
+                    <h3 id="output"></h3>
+
+                </main>
+            </div>
+            <footer>
+                <p>
+                    All Rights Reserved by Chanmin Woo
+                    <a href="credits.html"> Credits </a> &#169
+                </p>
+            </footer>
+        </div>
+        <script src="proj.js"></script>
+    </body>
+</html>
